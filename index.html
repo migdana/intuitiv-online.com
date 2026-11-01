@@ -1,12 +1,86 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Numele proiectului</title>
+  <meta name="theme-color" content="#f1f0fa">
+  <meta name="description" content="Articole, meditații, exerciții, quiz-uri și cursuri digitale despre intuiție, de parcurs în ritmul tău.">
+  <title>Intuitiv Online — explorează lumea interioară</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <h1>intuitiv-online.com</h1>
-  <p>Lucrez la prima versiune a platformei mele.</p>
+  <a class="skip-link" href="#main">Sari la conținut</a>
+  <header class="site-header">
+    <a class="brand" href="#acasa" aria-label="Intuitiv Online, acasă"><span class="brand-mark" aria-hidden="true">✳</span><span>Intuitiv <em>Online</em></span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Deschide meniul"><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Navigare principală">
+      <a href="#invata">Învață</a><a href="#cursuri">Cursuri</a><a href="#produse">Produse digitale</a><a href="#despre">Despre noi</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="header-actions"><a class="text-link account-link" href="#cont">Contul meu</a><a class="cart-link" href="#cos" aria-label="Coșul tău, 0 produse">Coș <span>0</span></a></div>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" id="acasa">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Un spațiu pentru explorare interioară</p>
+        <h1>Explorează lumea interioară <i>prin intuiție.</i></h1>
+        <p class="hero-lede">Articole, meditații, exerciții, quiz-uri și cursuri digitale pentru cei care vor să observe, să înțeleagă și să exerseze în ritmul lor.</p>
+        <div class="hero-actions"><a class="button button-primary" href="#invata">Începe cu materialele gratuite <span aria-hidden="true">↗</span></a><a class="button button-quiet" href="#cursuri">Vezi cursurile <span aria-hidden="true">→</span></a></div>
+        <div class="hero-note"><span class="note-icon">✧</span><span>Un pas mic, făcut cu atenție, poate fi un început bun.</span></div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrație abstractă în nuanțe de indigo și lila" role="img">
+        <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div><div class="art-orbit orbit-three"></div><div class="art-sun"></div><div class="art-leaf leaf-one">⌁</div><div class="art-leaf leaf-two">⌁</div><span class="art-caption">ascultă · observă · alege</span>
+      </div>
+    </section>
+
+    <section class="intro-strip"><div class="section-wrap intro-inner"><span class="tiny-star">✳</span><p>Un loc în care <strong>explicația întâlnește practica</strong>, iar fiecare își găsește propriul ritm.</p><span class="intro-line"></span></div></section>
+
+    <section class="section-wrap section-space" id="invata">
+      <div class="section-heading"><div><p class="eyebrow">Explorează biblioteca</p><h2>Citește, ascultă, <i>exersează</i></h2></div><p>Fiecare temă începe cu o explicație scurtă și continuă cu ceva de făcut. Alege ce ți se potrivește azi.</p></div>
+      <div class="learning-grid">
+        <article class="learn-card card-article"><div class="card-top"><span class="card-icon">Aa</span><span class="card-tag">Citește</span></div><h3>Articole</h3><p>Înțelege ce este intuiția și cum o deosebești de frică, impuls sau dorința de confirmare.</p><a class="arrow-link" href="#resurse">Explorează articolele <span>↗</span></a></article>
+        <article class="learn-card card-quiz"><div class="card-top"><span class="card-icon">◉</span><span class="card-tag">Descoperă</span></div><h3>Quiz-uri</h3><p>Câteva întrebări pentru a observa cum percepi, cum decizi și ce semnale remarci mai des.</p><a class="arrow-link" href="#quiz">Încearcă un quiz <span>↗</span></a></article>
+        <article class="learn-card card-audio"><div class="card-top"><span class="card-icon">♫</span><span class="card-tag">Ascultă</span></div><h3>Meditații</h3><p>Practici ghidate audio, cu durata și momentul potrivit pentru ascultare menționate clar.</p><a class="arrow-link" href="#resurse">Vezi meditațiile <span>↗</span></a></article>
+        <article class="learn-card card-journal"><div class="card-top"><span class="card-icon">✎</span><span class="card-tag">Practică</span></div><h3>Exerciții</h3><p>Fișe și jurnale de observare pe care le completezi în scris, în câteva minute pe zi.</p><a class="arrow-link" href="#resurse">Deschide exercițiile <span>↗</span></a></article>
+      </div>
+      <div class="topic-row"><span>Explorează după temă</span><a href="#resurse">Corp</a><a href="#resurse">Decizii</a><a href="#resurse">Relații</a><a href="#resurse">Bani</a><a href="#resurse">Misiune</a></div>
+    </section>
+
+    <section class="practice-band" id="resurse"><div class="section-wrap practice-layout"><div class="practice-copy"><p class="eyebrow">De unde începi</p><h2>Alege un prim <i>material</i></h2><p>Nu ai nevoie de un plan perfect. Alege o resursă și acordă-ți câteva minute să vezi ce observi.</p><a class="button button-primary" href="#quiz">Găsește-ți punctul de pornire <span>→</span></a></div><div class="resource-list">
+        <a class="resource-item" href="#invata"><span class="resource-num">01</span><span class="resource-symbol">Aa</span><span class="resource-title"><strong>Articol introductiv</strong><small>Ce este intuiția?</small></span><span class="resource-arrow">↗</span></a>
+        <a class="resource-item" href="#quiz"><span class="resource-num">02</span><span class="resource-symbol">◉</span><span class="resource-title"><strong>Testul potențialului intuitiv</strong><small>Quiz · 3 minute</small></span><span class="resource-arrow">↗</span></a>
+        <a class="resource-item" href="#invata"><span class="resource-num">03</span><span class="resource-symbol">♫</span><span class="resource-title"><strong>Meditație pentru intuiție</strong><small>Audio · 8 minute</small></span><span class="resource-arrow">↗</span></a>
+        <a class="resource-item" href="#invata"><span class="resource-num">04</span><span class="resource-symbol">✎</span><span class="resource-title"><strong>Jurnalul intuitiv zilnic</strong><small>Exercițiu · 5 minute</small></span><span class="resource-arrow">↗</span></a>
+      </div></div></section>
+
+    <section class="section-wrap section-space quiz-section" id="quiz"><div class="quiz-intro"><p class="eyebrow">O pauză de reflecție</p><h2>Ce voce asculți <i>cel mai des?</i></h2><p>Nu este un test psihologic, ci un mic prilej să observi cum iei decizii.</p></div><form class="quiz-card" id="intuition-quiz"><fieldset><legend>Atunci când ai de luat o decizie, de obicei…</legend><label class="quiz-option"><input type="radio" name="answer" value="body" required><span class="radio-mark"></span><span>Observ ce simt în corp și îmi acord puțin timp.</span></label><label class="quiz-option"><input type="radio" name="answer" value="thought"><span class="radio-mark"></span><span>Îmi fac o listă cu argumente și analizez opțiunile.</span></label><label class="quiz-option"><input type="radio" name="answer" value="rush"><span class="radio-mark"></span><span>Simt nevoia să aleg repede ca să scap de tensiune.</span></label><button class="button button-primary" type="submit">Află ce poți observa <span>→</span></button><p class="quiz-result" id="quiz-result" aria-live="polite"></p></fieldset></form></section>
+
+    <section class="courses-section section-space" id="cursuri"><div class="section-wrap"><div class="section-heading"><div><p class="eyebrow">Pentru aprofundare</p><h2>Cursuri cu spațiu <i>de practică</i></h2></div><p>Parcursuri cu înregistrări, exerciții și materiale de lucru, pentru când vrei să explorezi o temă mai pe larg.</p></div><div class="course-grid">
+      <article class="course-card course-one"><div class="course-art"><span>INTUITIV</span><strong>1.0</strong><i>reconectare</i></div><div class="course-body"><p class="course-kicker">Nivelul 1 · 4 ateliere</p><h3>Cum să îți dezvolți intuiția și să iei decizii în acord cu cine ești</h3><p>Un parcurs practic de reconectare cu tine și de recunoaștere a semnalelor intuiției.</p><a class="button button-outline" href="#contact">Vezi ce conține cursul <span>→</span></a></div></article>
+      <article class="course-card course-two"><div class="course-art"><span>INTUITIV</span><strong>2.0</strong><i>maestrul din tine</i></div><div class="course-body"><p class="course-kicker">Nivel avansat · 6 ateliere</p><h3>Maestrul din Tine</h3><p>Du intuiția în corp, relații, bani și proiectele construite împreună cu alții.</p><a class="button button-outline" href="#contact">Vezi ce conține cursul <span>→</span></a></div></article>
+    </div></div></section>
+
+    <section class="digital-section section-space" id="produse"><div class="section-wrap digital-layout"><div class="digital-art"><div class="book book-back"></div><div class="book book-front"><span>JURNALUL DE</span><strong>calibrare<br>intuitivă</strong><i>un spațiu pentru tine</i></div><span class="spark spark-a">✳</span><span class="spark spark-b">✧</span></div><div class="digital-copy"><p class="eyebrow">Resurse pentru ritmul tău</p><h2>Un loc în care să <i>revii</i></h2><p>Workbook-uri, fișe de lucru și audio-uri pe care le găsești în contul tău după cumpărare. Vezi pe fiecare pagină ce conține, formatul și accesul.</p><div class="format-pills"><span>Workbook-uri PDF</span><span>Audio</span><span>Înregistrări</span></div><a class="button button-primary" href="#contact">Descoperă produsele <span>→</span></a></div></div></section>
+
+    <section class="how-section section-space"><div class="section-wrap"><div class="section-heading"><div><p class="eyebrow">Reperele noastre</p><h2>Cum sunt făcute <i>materialele</i></h2></div><p>Un spațiu clar te ajută să explorezi fără grabă și să alegi ce ți se potrivește.</p></div><div class="values-grid"><article><span>01</span><h3>Explicație și practică</h3><p>După fiecare text urmează ceva de făcut: un exercițiu, o meditație sau câteva întrebări.</p></article><article><span>02</span><h3>În ritmul tău</h3><p>Materialele rămân pe site și le poți relua atunci când simți că îți sunt de folos.</p></article><article><span>03</span><h3>Spunem ce este fiecare lucru</h3><p>Separăm experiența personală, exercițiul de reflecție și afirmațiile care au nevoie de o sursă.</p></article></div></div></section>
+
+    <section class="about-section section-space" id="despre"><div class="section-wrap about-layout"><div class="about-visual"><div class="portrait portrait-one"><span>M</span><small>Migdana</small></div><div class="portrait portrait-two"><span>R</span><small>Romeo</small></div><span class="about-flower">✳</span></div><div class="about-copy"><p class="eyebrow">O bibliotecă în lucru, făcută în doi</p><h2>Despre <i>noi</i></h2><p>Intuitiv Online este locul în care eu și Romeo punem laolaltă cursurile, meditațiile, exercițiile și explicațiile noastre despre intuiție. Publicăm materiale pe care le parcurgi în ritmul tău și produse digitale la care te întorci când ai nevoie să te oprești, să observi și să verifici ce simți.</p><div class="people"><div><strong>Migdana Ștefănoaei</strong><span>Terapeut holistic și coach</span></div><div><strong>Iulius Romeo Scăiceanu</strong><span>Specialist în remedii energetice</span></div></div><a class="text-link" href="#contact">Scrie-ne dacă vrei să ne cunoști <span>↗</span></a></div></div></section>
+
+    <section class="disclaimer"><div class="section-wrap disclaimer-inner"><span class="disclaimer-icon">✧</span><div><strong>Un reper important</strong><p>Materialele au caracter educațional și de reflecție. Nu oferă diagnostic, tratament sau predicții și nu înlocuiesc ajutorul unui medic, psiholog sau al altui specialist.</p></div></div></section>
+
+    <section class="faq-section section-space" id="intrebari"><div class="section-wrap faq-layout"><div><p class="eyebrow">Întrebări frecvente</p><h2>Lucruri bune <i>de știut</i></h2><p class="faq-lede">Dacă nu găsești răspunsul căutat, ne poți scrie.</p><a class="text-link" href="#contact">Mergi la contact <span>↗</span></a></div><div class="faq-list"><details><summary>Am nevoie de cont?</summary><p>Nu pentru materialele gratuite. Contul îți trebuie când cumperi un curs sau un produs, ca să îl găsești oricând.</p></details><details><summary>Cum primesc ce am cumpărat?</summary><p>După confirmarea plății, produsul apare în Contul meu, la Produsele mele.</p></details><details><summary>Pot folosi materialele în locul terapiei?</summary><p>Nu. Sunt materiale educaționale și nu înlocuiesc medicul, psihologul sau terapeutul.</p></details><details><summary>Am plătit, dar nu văd produsul.</summary><p>Scrie-ne din pagina Contact și menționează numărul comenzii.</p></details></div></div></section>
+
+    <section class="contact-section section-space" id="contact"><div class="section-wrap contact-layout"><div><p class="eyebrow">Suntem aici</p><h2>Hai să <i>vorbim</i></h2><p>Ne poți scrie despre materiale, cursuri, plăți sau acces. Îți răspundem pe e-mail.</p><div class="contact-note">Prin e-mail nu oferim consultanță medicală sau psihologică. Într-o situație de urgență, sună la <strong>112</strong>.</div></div><form id="contact-form" class="contact-form"><div class="form-row"><label>Nume<input name="name" autocomplete="name" required placeholder="Cum te numești?"></label><label>E-mail<input name="email" type="email" autocomplete="email" required placeholder="nume@email.ro"></label></div><label>Subiect<input name="subject" required placeholder="Despre ce vrei să ne scrii?"></label><label>Mesaj<textarea name="message" rows="4" required placeholder="Scrie mesajul tău aici…"></textarea></label><label class="consent"><input type="checkbox" required><span>Sunt de acord cu prelucrarea datelor pentru a primi răspuns.</span></label><button class="button button-primary" type="submit">Trimite mesajul <span>→</span></button><p class="form-result" id="form-result" aria-live="polite"></p></form></div></section>
+
+    <section class="account-cart-section section-space"><div class="section-wrap account-cart-grid"><article class="account-card" id="cont"><p class="eyebrow">Spațiul tău</p><h2>Contul meu</h2><p>Produsele cumpărate vor fi disponibile aici, în secțiunea Produsele mele.</p><div class="account-shortcuts"><span>Produsele mele</span><span>Comenzi</span><span>Datele mele</span></div><a class="text-link" href="#invata">Încă nu ai produse? Începe cu materialele gratuite <span>↗</span></a></article><article class="cart-card" id="cos"><p class="eyebrow">Comanda ta</p><h2>Coșul tău</h2><p>Coșul este gol. Când găsești un material potrivit, îl poți adăuga aici.</p><label class="consent cart-consent"><input type="checkbox" disabled><span>Am citit Termenii și condițiile și Condițiile de cumpărare.</span></label><button class="button button-primary" type="button" disabled>Finalizează comanda <span>→</span></button></article></div></section>
+    <section class="closing-cta"><div class="section-wrap closing-inner"><span class="closing-star">✳</span><div><p class="eyebrow">Un început simplu</p><h2>Alege un material și dă-i <i>zece minute.</i></h2></div><a class="button button-light" href="#invata">Începe cu materialele gratuite <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="section-wrap footer-main"><div class="footer-brand"><a class="brand" href="#acasa"><span class="brand-mark">✳</span><span>Intuitiv <em>Online</em></span></a><p>Un spațiu pentru a observa, a înțelege și a exersa în ritmul tău.</p></div><div class="footer-links"><div><strong>Explorează</strong><a href="#invata">Învață</a><a href="#cursuri">Cursuri</a><a href="#produse">Produse digitale</a></div><div><strong>Informații</strong><a href="#despre">Despre noi</a><a href="#intrebari">Întrebări frecvente</a><a href="#contact">Contact</a></div><div><strong>Legal</strong><a href="#legal">Termeni și condiții</a><a href="#legal">Confidențialitate</a><a href="#legal">Cookies și retur</a></div></div></div><div class="section-wrap footer-bottom"><span>© 2026 Intuitiv Online</span><span>Cu grijă, pentru explorarea ta interioară.</span></div></footer>
+  <div class="cookie-banner" id="cookie-banner" role="dialog" aria-label="Preferințe cookies" hidden><div><strong>Un mic răgaz pentru cookies</strong><p>Folosim cookies esențiale pentru funcționarea site-ului. Poți alege dacă accepți și cookies opționale.</p></div><div class="cookie-actions"><button class="button button-quiet" data-cookie="essential">Doar esențiale</button><button class="button button-primary" data-cookie="all">Acceptă toate</button></div></div>
 </body>
 </html>
